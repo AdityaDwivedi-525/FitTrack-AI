@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic
+opencv-python
+numpy
+mediapipe
+websockets
+scikit-learn
+pandas
+joblib
+xgboost
+pymongo
+bcrypt
+pyjwt
+httpx

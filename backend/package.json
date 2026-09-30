@@ -1,0 +1,8 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "..\\venv\\Scripts\\python.exe main.py",
+    "start": "..\\venv\\Scripts\\python.exe main.py"
+  }
+}

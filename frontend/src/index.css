@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white overflow-x-hidden;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom aesthetics and micro-animations */
+.glow-text {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.4);
+}
+
+.glow-box {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glow-box:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.7), inset 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Modern glassmorphism utilities */
+.glass-panel {
+  @apply bg-gray-900/60 backdrop-blur-xl border border-gray-700/50 shadow-2xl;
+}
+
+/* Smooth button transitions */
+button {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px) scale(1.02);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(1px) scale(0.98);
+}
